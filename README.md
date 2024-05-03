@@ -9,8 +9,16 @@ HTTP server that responds like Moov's API, but with mocked responses. moov-mock 
 
 ## Usage
 
+Start by running the Docker image of moov-mock:
+
 ```
 docker run -p 4010:4010 moovfinancial/mock:latest
+```
+
+Then make a request to the local API:
+
+```
+curl http://0.0.0.0:4010/tos-token | jq .
 ```
 
 ## License
