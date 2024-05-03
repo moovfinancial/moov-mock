@@ -10,7 +10,7 @@ HTTP server that responds like Moov's API, but with mocked responses. moov-mock 
 ## Usage
 
 ```
-docker run -p 4010:4010 stoplight/prism:5 mock -h 0.0.0.0 https://docs.moov.io/openapi/openapi.json
+docker run -p 4010:4010 moovfinancial/mock:latest
 ```
 
 ## License
